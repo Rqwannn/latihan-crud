@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LatihanController;
-use App\Http\Controllers\FormEditController;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +17,4 @@ use App\Http\Controllers\FormEditController;
 
 Route::resource('latihan', LatihanController::class);
 Route::get('/', [LatihanController::class, "index"]);
+Route::get('/search', [SearchController::class, "index"])->name('search');

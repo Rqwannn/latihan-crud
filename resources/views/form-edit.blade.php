@@ -14,5 +14,6 @@
         <textarea name="alamat" style="resize: none; padding: 10px; margin-bottom:10px;" placeholder="Alamat">{{$data->alamat}}</textarea>
         <button type="submit" style="padding: 10px; cursor: pointer; margin-bottom: 10px;">Submit</button>
     </form>
+    <a href="{{route('latihan.index')}}">Kembali</a>
 </body>
 </html>

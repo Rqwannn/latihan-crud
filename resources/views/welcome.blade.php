@@ -19,6 +19,12 @@
         <button type="submit" style="padding: 10px; cursor: pointer; margin-bottom: 10px;">Submit</button>
     </form>
 
+    <form action="{{route('search')}}" method="POST">
+        @method('GET')
+        <input type="text" name="key">
+        <button type="submit">Submit</button>
+    </form>
+
     <table>
         <thead>
             <tr>
